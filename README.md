@@ -15,4 +15,4 @@ The website is built using HTML and CSS and is hosted using GitHub Pages.
 
 ## Website
 
-[Visit my portfolio][https://samittarius.github.io]
+[Visit my portfolio](https://samittarius.github.io/)
