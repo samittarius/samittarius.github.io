@@ -1,43 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Sam Faron | Game Programmer</title>
   </head>
 
   <body>
-    <header>
-      <h2>Sam Faron</h2>
-      <p>Junior Game Programmer</p>
-    </header>
+    
+    <!-- === HEADER: NAVIGATION === -->
+  <header class="site-header"> 
+    <nav class="main-navigation"> 
+      <a href="#home" class="site-name"> Sam Faron | Game Programmer </a>
+      <ul class="navigation-links"> 
+        <li> <a href="#projects">Projects</a> </li> 
+        <li> <a href="#skills">Skills</a> </li> 
+        <li> <a href="#about">About</a> </li> 
+      </ul> 
+    </nav>
+    
+    <!-- === INTRO === -->
+    <section id="home" class="intro"> 
+      <h1>Sam Faron</h1> 
+        <h2>Junior Game Programmer</h2> 
+        <p class="intro-blurb"> 
+          Hello, my name is Sam and I am currently working on building a programming portfolio. 
+        </p> 
+    </section>
 
+    <!-- === MAIN === -->    
     <main>
-      <section>
-        <h3>About Me</h3>
-        <p>
-          Hello! I am a game programmer currently focusing on building a portfolio for Junior Programmer roles.
-        </p>
-      </section>
 
-      <section>
-        <h3>Projects</h3>
-        <p>
-          My projects will appear here as I upload them.
-        </p>
-      </section>
+      <!-- === PROJECTS === -->
+      <section id="projects"> 
+        <h2>Projects</h2> 
+          <p class="section-intro"> 
+            My programming projects. 
+          </p>
 
-      <section>
-        <h3>Skills</h3>
-        <ul>
-          <li>C++</li>
-          <li>C#</li>
-          <li>SFML</li>
-          <li>Unreal Engine</li>
-          <li>Unity Engine</li>
-        </ul>
-      </section>
-    </main>
-  </body>
+        <!-- PROJECT 1 --> 
+        <article class="project"> 
+          
+          <div class="project-image"> 
+            <img src="image/TowerCover.png" alt="Tower! Game cover image"> </div> 
+          
+          <div class="project-content">
+            <h3>TOWER! Game</h3> 
+              <p class="project-short-description"> 
+                Play as a brave knight tearing down an impossibly tall tower of technology. 
+              </p> 
+            <h4>Programming Features</h4> 
+              <p>A small 2D game developed using C++ and SFML to demonstrate knowledge and understanding of C++ fundamentals.</p>
+              <p>TOWER! is a clone of the popular game Timberman, available on Steam, but with a more fantasy RPG-esque aesthetic.</p>
+              <p>All gameplay programming and game logic were written and implemented by myself. Key features include:</p>
+              <u>
+                <li>Player movement left and right</li>
+                <li>Simple background animation</li>
+                <li>Random number generation</li>
+                <li>Collision detection</li>
+                <li>Time management</li>
+                <li>Audio handling</li>
+              </u>
+              
+              <div class="project-links"> 
+                <a href="https://github.com/samittarius/TowerGame" target="_blank" rel="noopener noreferrer"> 
+                  GitHub: Source code repository 
+                </a> 
+                <a href="https://samittarius.itch.io/towergame" target="_blank" rel="noopener noreferrer"> 
+                  itch.io: Download and play the game
+                </a>
+              </div> 
+            </div>
+          </article>
+
+          <!-- PROJECT 2 goes here --> 
+        
+        </section>
+      
+        <!-- === SKILLS === --> 
+        <section id="skills">
+          <h2>Skills</h2>
+          <p class="section-intro">
+            My experience level in programming and technologies.
+          </p>
+
+          <!-- LANGUAGES -->
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <ul class="skills-list">
+              <li>
+                <span class="skill-name">C++</span>
+                <span class="skill-level">Intermediate</span>
+              </li>
+              <li>
+                <span class="skill-name">C#</span>
+                <span class="skill-level">Beginner</span>
+              </li>
+              <li>
+                <span class="skill-name">HTML, CSS</span>
+                <span class="skill-level">Beginner</span>
+              </li>
+            </ul>
+          </div>
+
+                    <!-- ENGINES -->
+          <div class="skill-category">
+            <h3>Engines</h3>
+            <ul class="skills-list">
+              <li>
+                <span class="skill-name">Unreal Engine</span>
+                <span class="skill-level">Beginner</span>
+              </li>
+              <li>
+                <span class="skill-name">Unity Engine</span>
+                <span class="skill-level">Beginner</span>
+              </li>
+            </ul>
+          </div>
+
+                    <!-- IDEs / DEVELOPMENT TOOLS -->
+          <div class="skill-category">
+            <h3>IDEs</h3>
+            <ul class="skills-list">
+              <li>
+                <span class="skill-name">Visual Studio Code</span>
+                <span class="skill-level">Intermediate</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- === ABOUT ME === -->
+        <section id="about"> 
+          <h2>About Me</h2> 
+          <div class="about-container"> 
+          
+            <!-- PHOTO --> 
+            <div class="about-photo"> 
+              <img src="image/ProfilePic.jpg" alt="Sam Faron" > 
+            </div> 
+          
+            <!-- BIO --> 
+            <div class="about-content"> 
+              <p> Hello, my name is Sam (he/him). I am currently focusing on building a portfolio for Junior Programmer roles. </p>
+              <p>I was born and raised in a small, coastal village in Ireland, and now live in Tokyo, Japan with my partner and our cat. My career background is in education and translation, but I have always wanted to become a programmer and game developer. </p>
+              <p>My earliest memories are of the joy and wonder I found in exploring fantastical worlds created in video games, and I am committed to fulfilling my dream of inspiring the same joy and wonder in others through my own creations. </p> 
+            </div> 
+          </div> 
+        </section>
+      </main>
+
+      <!-- === FOOTER: EXTERNAL LINKS === -->
+      <footer class="site-footer">
+        <nav class="external-links"> 
+          <a href="https://github.com/samittarius/" target="_blank" rel="noopener noreferrer" > 
+            GitHub 
+          </a> 
+          <a href="https://samittarius.itch.io/" target="_blank" rel="noopener noreferrer" > 
+            itch.io 
+          </a> 
+          <a href="https://www.youtube.com/@samittarius" target="_blank" rel="noopener noreferrer" > 
+            YouTube 
+          </a> 
+          <a href="https://www.linkedin.com/in/sam-caoimhin-faron/" target="_blank" rel="noopener noreferrer" >
+            LinkedIn 
+          </a>
+        </nav>
+        <p class="footer-signature">
+          &copy; 2026 Sam Faron
+        </p>
+      </footer>
+    
+    </body>
   </html>
