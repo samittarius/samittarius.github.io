@@ -192,7 +192,7 @@ section > h2 {
 
 .project-links a {
     padding: 8px 14px;
-    background-color: #22262A;
+    background-color: #101214;
     color: #009999;
     border-radius: 4px;
     transition: color 0.2s ease;
@@ -254,7 +254,6 @@ section > h2 {
 
 /* About text. */
 .about-content {
-    max-width: 650px;
     color: #DCE1E4;
 }
 
