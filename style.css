@@ -1,20 +1,258 @@
+```css
+
+/* === GENERAL === */
+/* Make width and height calculations more predictable for every element on the page. */
+* {
+    box-sizing: border-box;
+}
+
+/* Body settings. */
 body {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  font-family: Arial, san-serif;
-  line-height: 1.6;
+    margin: 0;
+    font-family: Garamond, serif;
+    line-height: 1.6;
+    background-color: #0B1120;
+    color: #E5E7EB;
 }
 
-header {
-  margin-bottom: 60px;
+/* Make images responsive. */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-h1 {
-  font-size: 3rem;
+/* Remove the default underline from links.*/
+a {
+    color: #38BDF8;
+    text-decoration: none;
+}
+
+/* === HEADER === */
+.site-header {
+    background-color: #111827;
+    color: #94A3B8;
+}
+
+/* === NAVIGATION === */
+.main-navigation {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* My name / site name. */
+.site-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Navigation list. */
+.navigation-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+/* Navigation links. Transition added for smoother hover. */
+.navigation-links a {
+    color: #38BDF8;
+    transition: color 0.2s ease;
+}
+
+.navigation-links a:hover {
+    color: #7DD3FC;
+}
+
+/* === INTRODUCTION === */
+.intro {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.intro h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.intro-blurb {
+    max-width: 650px;
+    font-size: 1.1rem;
+    color: #E5E7EB;
+}
+
+/* === MAIN === */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
 section {
-  margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
+section > h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.section-intro {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #E5E7EB;
+}
+
+/* === PROJECTS === */
+.project {
+    margin-bottom: 60px;
+    padding: 30px;
+    background-color: #111827;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+/* Project image. */
+.project-image img {
+    width: 50%;
+    border-radius: 6px;
+}
+
+/* Project title. */
+.project-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Short project description. */
+.project-short-description {
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+/* Programming Features heading. */
+.project-content h4 {
+    margin-bottom: 10px;
+}
+
+/* Links to GitHub and itch.io. */
+.project-links {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.project-links a {
+    padding: 8px 14px;
+    background-color: #111827;
+    color: #38BDF8;
+    border-radius: 4px;
+    transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+    color: #7DD3FC;
+}
+
+/* === SKILLS === */
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-category h3 {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.skills-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #E5E7EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-level {
+    color: #94A3B8;
+    font-size: 0.9rem;
+}
+
+/* === ABOUT ME === */
+.about-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* Profile photograph. */
+.about-photo img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* About text. */
+.about-content {
+    max-width: 650px;
+}
+
+/* === FOOTER === */
+
+.site-footer {
+    background-color: #111827;
+    color: #94A3B8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* External links: GitHub / itch.io / YouTube / LinkedIn */
+.external-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.external-links a {
+    transition: color 0.2s ease;
+}
+
+.external-links a:hover {
+    color: #7DD3FC;
+}
+
+/* Year and name. */
+.footer-info {
+    margin: 0;
+    color: #94A3B8;
+    font-size: 0.9rem;
+}
+
+```
